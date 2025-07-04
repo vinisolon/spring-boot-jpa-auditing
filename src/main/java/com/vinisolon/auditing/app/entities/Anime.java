@@ -10,6 +10,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.SourceType;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
@@ -35,10 +36,10 @@ public class Anime {
     private Boolean finished;
     @Column(nullable = false)
     private Integer seasons;
-    @CreationTimestamp
+    @CreationTimestamp(source = SourceType.DB)
     @Column(columnDefinition = "TIMESTAMP", nullable = false, updatable = false)
     private LocalDateTime createdAt;
-    @UpdateTimestamp
+    @UpdateTimestamp(source = SourceType.DB)
     @Column(columnDefinition = "TIMESTAMP", nullable = false)
     private LocalDateTime updatedAt;
 }
