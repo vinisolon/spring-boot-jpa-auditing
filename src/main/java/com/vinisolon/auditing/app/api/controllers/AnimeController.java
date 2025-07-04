@@ -1,7 +1,7 @@
-package com.vinisolon.auditing.app.api;
+package com.vinisolon.auditing.app.api.controllers;
 
 import com.vinisolon.auditing.app.api.requests.AnimeRequest;
-import com.vinisolon.auditing.app.api.response.AnimeResponse;
+import com.vinisolon.auditing.app.api.responses.AnimeResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

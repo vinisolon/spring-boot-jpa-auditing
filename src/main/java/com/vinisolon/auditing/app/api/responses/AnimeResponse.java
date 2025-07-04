@@ -1,4 +1,4 @@
-package com.vinisolon.auditing.app.api.response;
+package com.vinisolon.auditing.app.api.responses;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
