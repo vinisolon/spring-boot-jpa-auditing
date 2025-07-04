@@ -20,6 +20,6 @@ public class AnimeRequest {
     private Integer releaseYear;
     @NotNull(message = "Finished flag cannot be null")
     private Boolean finished;
-    @NotNull(message = "seasons cannot be null")
+    @NotNull(message = "Seasons cannot be null")
     private Integer seasons;
 }
